@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".CSTrackListActivity">
+      <item android:id="@+id/action_search"
+            android:title="@string/action_search"
+            android:orderInCategory="100"
+            android:icon="@mipmap/ic_search"
+            android:actionLayout="@layout/search_filter_layout"
+            app:showAsAction="ifRoom|collapseActionView"/>
+        <item android:id="@+id/action_sort"
+              android:title="@string/action_sort"
+              android:orderInCategory="100"
+              android:icon="@mipmap/ic_action_sort"
+              app:showAsAction="ifRoom"/>
+</menu>

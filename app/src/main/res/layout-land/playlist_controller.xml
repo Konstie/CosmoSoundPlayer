@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/player_controllers"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+        <TextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="16dp"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="00:00"
+                android:textColor="@color/universal_black"  />
+
+        <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toStartOf="@+id/endText"
+                android:layout_toEndOf="@+id/startText" />
+
+        <TextView
+                android:id="@+id/endText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:layout_alignWithParentIfMissing="true"
+                android:maxLines="1"
+                android:textColor="@color/universal_black" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/track_info"
+                            android:singleLine="false"
+                            android:textSize="12sp"
+                            android:textColor="@color/universal_black"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                            android:id="@+id/source"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/controller_playall"
+
+                            android:contentDescription="previous"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                    <ImageView
+                            android:id="@+id/prev"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/controller_prev"
+                            android:layout_gravity="center_vertical"/>
+
+                    <ToggleButton
+                            android:id="@+id/imageView1"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/play_pause_tbutton"
+                            android:layout_gravity="center_vertical"
+                            android:textOff=""
+                            android:textOn=""/>
+
+                    <ImageView
+                            android:id="@+id/next"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/controller_next"
+                            android:layout_gravity="center_vertical"/>
+
+                    <ImageView
+                            android:id="@+id/stop"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/controller_stop"
+                            android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

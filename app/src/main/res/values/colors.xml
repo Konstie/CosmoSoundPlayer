@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#073B70</color>
+    <color name="primary_dark">#012C57</color>
+    <color name="primary_light">#CEE1F2</color>
+    <color name="accent">#175796</color>
+
+    <color name="toolbarTitleColor">#FFFFFF</color>
+    <color name="song_paused">#cccccc</color>
+    <color name="song_title_color">#ff606060</color>
+
+    <color name="universal_black">#000000</color>
+</resources>

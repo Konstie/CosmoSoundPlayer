@@ -1,0 +1,44 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:elevation="7sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            </include>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/playlist_container"
+                    android:layout_below="@id/toolbar"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="320dp"
+                android:background="@android:color/white"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:scrollbars="vertical"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

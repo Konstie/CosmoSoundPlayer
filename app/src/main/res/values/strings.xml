@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cosmosound</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_settings">Settings</string>
+    <string name="play_controller">play</string>
+    <string name="search_hint">start typing...</string>
+    <string name="drawer_open">Drawer opened</string>
+    <string name="drawer_closed">Drawer closed!</string>
+</resources>
