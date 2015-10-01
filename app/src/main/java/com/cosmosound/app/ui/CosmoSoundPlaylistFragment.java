@@ -1,4 +1,4 @@
-package com.cosmosound.app;
+package com.cosmosound.app.ui;
 
 import android.content.*;
 import android.database.Cursor;
@@ -7,12 +7,16 @@ import android.os.*;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
-import android.support.v7.widget.CardView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.*;
 import android.widget.*;
+import com.cosmosound.app.utils.CosmoSoundUtils;
+import com.cosmosound.app.R;
+import com.cosmosound.app.adapters.CosmoSoundSongAdapter;
+import com.cosmosound.app.entity.MusicTrack;
+import com.cosmosound.app.services.CosmoSoundService;
 
 import java.util.ArrayList;
 import java.util.Collections;

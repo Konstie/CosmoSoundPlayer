@@ -1,4 +1,4 @@
-package com.cosmosound.app;
+package com.cosmosound.app.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.cosmosound.app.R;
 
 public class DrawerNavigationAdapter extends RecyclerView.Adapter<DrawerNavigationAdapter.ViewHolder> {
     private static final int TYPE_HEADER = 0;

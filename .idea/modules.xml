@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CosmoSound.iml" filepath="$PROJECT_DIR$/CosmoSound.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CosmoSoundPlayer.iml" filepath="$PROJECT_DIR$/CosmoSoundPlayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

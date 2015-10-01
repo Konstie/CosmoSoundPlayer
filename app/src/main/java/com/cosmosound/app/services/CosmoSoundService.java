@@ -1,4 +1,4 @@
-package com.cosmosound.app;
+package com.cosmosound.app.services;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -13,6 +13,10 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.provider.MediaStore;
 import android.util.Log;
+import com.cosmosound.app.ui.CosmoSoundPlaylistFragment;
+import com.cosmosound.app.R;
+import com.cosmosound.app.entity.MusicTrack;
+import com.cosmosound.app.ui.CosmoSoundPlaylistActivity;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -57,11 +61,10 @@ public class CosmoSoundService extends Service implements MediaPlayer.OnPrepared
     }
 
     public class CosmoSoundMusicBinder extends Binder {
-        CosmoSoundService getService() {
+        public CosmoSoundService getService() {
             return CosmoSoundService.this;
         }
     }
-
 
     @Override
     public IBinder onBind(Intent intent) {

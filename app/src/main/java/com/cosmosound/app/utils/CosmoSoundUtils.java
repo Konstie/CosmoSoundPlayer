@@ -1,4 +1,4 @@
-package com.cosmosound.app;
+package com.cosmosound.app.utils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

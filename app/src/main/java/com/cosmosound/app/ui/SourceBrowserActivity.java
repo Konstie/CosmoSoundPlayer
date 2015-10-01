@@ -1,9 +1,10 @@
-package com.cosmosound.app;
+package com.cosmosound.app.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import com.cosmosound.app.R;
 
 public class SourceBrowserActivity extends AppCompatActivity {
 

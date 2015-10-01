@@ -1,4 +1,4 @@
-package com.cosmosound.app;
+package com.cosmosound.app.entity;
 
 public class MusicTrack {
     private long trackID;
